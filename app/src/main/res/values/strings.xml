@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AmbMoods</string>
+    <string name="tab_Workspace">WorkSpace</string>
+    <string name="tab_Lifetime">LifeTime</string>
+    <string name="tab_Styles">Styles</string>
+    <string name="tab_AroundMe">AroundMe</string>
+    <string name="drive_label_id">Drive</string>
+    <string name="office_label_id">Office</string>
+    <string name="dinner_label_id">Dinner</string>
+    <string name="shops_label_id">Shops</string>
+    <string name="coffeeshops_label_id">CoffeeShops</string>
+    <string name="garden_label_id">Garden</string>
+    <string name="sleep_label_id">Sleep</string>
+    <string name="study_label_id">Study</string>
+    <string name="meditate_label_id">Meditate</string>
+    <string name="cook_label_id">Cook</string>
+    <string name="walk_label_id">Walk</string>
+    <string name="read_label_id">Read</string>
+    <string name="acustic_label_id">Acustic</string>
+    <string name="guitar_label_id">Guitar</string>
+    <string name="piano_label_id">Piano</string>
+    <string name="atmospheric_label_id">Atmospheric</string>
+    <string name="classic_label_id">Classic</string>
+    <string name="chillout_label_id">Chillout</string>
+    <string name="zone_label_id">zone</string>
+</resources>
