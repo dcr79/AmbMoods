@@ -229,8 +229,6 @@ sealed class Mood {
                 ).random()
         }
 
-        private fun <A> List<A>.random(): A =
-            this.random(Random)
     }
 
     sealed class AroundMe : Mood() {
