@@ -47,12 +47,13 @@ class PlaceholderFragment : Fragment() {
         val textView6: TextView = root.findViewById(R.id.section6)
         val textViews = listOf(textView1, textView2, textView3, textView4, textView5, textView6)
         var section: Section? = null
-        textViews.forEachIndexed { n, textView ->
-            textView.moodClick(n, section, textViews)
-        }
+
 
         pageViewModel.text.observe(this, Observer<Section> {
             section = it
+            textViews.forEachIndexed { n, textView ->
+                textView.moodClick(n, section, textViews)
+            }
             when {
                 it.moods.isEmpty() -> Unit //TODO() needs implementation
                 it.moods[0] == Mood.AroundMe.Zone -> Unit //TODO() needs implementation
@@ -109,10 +110,15 @@ class PlaceholderFragment : Fragment() {
         textViews: List<TextView>
     ) {
         setOnClickListener { view ->
-            section?.let { mSpotifyAppRemote?.playerApi?.play(it.moods[n].playListId) }
+
+            section?.let {
+                val result = it.moods[n].playListId
+                mSpotifyAppRemote?.playerApi?.play(result)
+            }
             textViews.changeBackground(n)
         }
     }
+
 
     companion object {
         /**
